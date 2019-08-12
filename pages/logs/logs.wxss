@@ -1,0 +1,14 @@
+.book_city_first {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f0eaea
+}
+.first_item {
+  width: 100rpx;
+  height: 60rpx;
+  text-align: center;
+  font-size: 40rpx
+}
+.first_item_hide{
+  border-bottom: 2rpx solid red
+}

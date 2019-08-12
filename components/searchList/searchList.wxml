@@ -1,0 +1,11 @@
+<view wx:for="{{searchListObj1}}" wx:key="index" class="serch_history_item">
+  <view class="item_left" bindtap="jump_detail_Obj" data-item="{{item}}">
+    <image src="https://statics.zhuishushenqi.com{{item.cover}}" class="search_history_img"></image>
+  </view>
+  <view class="item_right">
+    <view class="item_title" bindtap="jump_detail_Obj" data-item="{{item}}">{{item.title}}</view>
+    <view class="item.author">{{item.author}}</view>
+    <view class="item_shortIntro" bindtap="jump_detail_Obj" data-item="{{item}}">{{item.shortIntro}}</view>
+    <view class="item_latelyFollower">最近收藏：{{item.latelyFollower}}</view>
+  </view>
+</view>

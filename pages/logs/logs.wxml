@@ -1,0 +1,6 @@
+<view class="book_city_first">
+<view class="first_item {{num==='1'?'first_item_hide':''}}"  data-tapid='1' bindtap="tap">分类</view>
+<view class="first_item {{num==='2'?'first_item_hide':''}}"  data-tapid='2' bindtap="tap">排行</view>
+</view>
+<navClassification wx:if="{{num === '1'}}" schoolBody="{{schoolBody}}" girlStudent="{{girlStudent}}" publish="{{publish}}"></navClassification>
+<navRanking wx:elif="{{num === '2'}}" schoolBodyRank="{{schoolBodyRank}}" girlStudentRank="{{girlStudentRank}}"></navRanking>

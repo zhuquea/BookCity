@@ -1,0 +1,33 @@
+.serch_history_item{
+  display: flex
+}
+.search_history_img{
+  width: 200rpx;
+  height: 300rpx
+}
+.item_right{
+  margin-left: 20rpx
+}
+.item_title {
+  height: 50rpx
+}
+.item_author{
+ height: 50rpx;
+ color: #8a8a8a;
+ font-size: 30rpx;
+ margin-top: 20rpx
+}
+.item_shortIntro{
+  height: 150rpx;
+  color: #8a8a8a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  font-size: 30rpx
+}
+.item_latelyFollower{
+  font-size: 30rpx;
+  color: #e0620d
+}

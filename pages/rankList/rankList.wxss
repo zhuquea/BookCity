@@ -1,0 +1,14 @@
+.rankList_first{
+  display: flex;
+  justify-content: space-around;
+  line-height: 80rpx;
+  background-color: #e6e6e6
+}
+.first_item {
+  width: 100rpx;
+  line-height: 60rpx;
+  text-align: center
+}
+.first_item_hideObj{
+  border-bottom: 2rpx solid red
+}

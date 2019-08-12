@@ -1,0 +1,33 @@
+<view class="search_first">
+  <van-search value="{{ value }}" placeholder="请输入书名或者作者名" bind:focus="focusObj" bind:blur="blurObj" bind:change="searchChangeObj" use-action-slot>
+    <view slot="action" bind:tap="focusObj" wx:if="{{searchListObj===false}}">搜索</view>
+    <view slot="action" bind:tap="onCancel" wx:else>取消</view>
+  </van-search>
+</view>
+<navSearchList wx:if="{{searchListObj===true}}" searchListObj1="{{searchListObj1}}"></navSearchList>
+<view wx:elif="{{searchListObj===false}}">
+  <view class="search_second">
+    <view class="second_left">大家都在搜</view>
+    <view class="second_right" bindtap="changeObj">
+      <image src="../../icons/shuaxin(red).png" class="second_right_img"></image>
+      <text class="second_right_change">换一换</text>
+    </view>
+  </view>
+  <view class="search_third">
+    <block wx:for="{{backgroundColor}}" wx:key="index" data-index="{{index}}">
+      <view style="background-color: {{item.color}}" class="hot_search_item" bindtap="everySearch" data-index="{{index}}">{{hotSearchSix[index]}}</view>
+    </block>
+  </view>
+  <view class="search_fourth">
+    <view class="fourth_left">搜索历史</view>
+    <view class="fourth_right" bindtap="clearHistory">
+      <image src="../../icons/delete.png" class="fourth_delete_img"></image>
+      清空
+    </view>
+  </view>
+  <view class="search_History_Obj_all">
+    <view wx:for="{{searchHistoryObj}}" wx:key="index" class="search_History_Obj_item" bindtap="searchHistory_Obj" data-index="{{index}}">
+      {{item}}
+    </view>
+  </view>
+</view>

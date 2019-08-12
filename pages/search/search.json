@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-search": "../../lib/vant/search/index",
+    "navSearchList": "../../components/searchList/searchList"
+  },
+  "navigationBarTitleText": "搜索",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

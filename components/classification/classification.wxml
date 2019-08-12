@@ -1,0 +1,29 @@
+<view>
+<view class="schoolBody_first">男生</view>
+<van-row>
+  <van-col span="8" wx:for="{{schoolBody}}" wx:key="index">
+  <view class="schoolBody_item" bindtap="jumpClassificationDetail1" data-item="{{item}}">
+  <view class="item_name">{{item.name}}</view>
+  <view class="item_bookCount">{{item.bookCount}}本</view>
+  </view>
+  </van-col>
+</van-row>
+<view class="schoolBody_first">女生</view>
+<van-row>
+  <van-col span="8" wx:for="{{girlStudent}}" wx:key="index">
+  <view class="schoolBody_item" bindtap="jumpClassificationDetail2" data-item="{{item}}">
+  <view class="item_name">{{item.name}}</view>
+  <view class="item_bookCount">{{item.bookCount}}本</view>
+  </view>
+  </van-col>
+</van-row>
+<view class="schoolBody_first">出版</view>
+<van-row>
+  <van-col span="8" wx:for="{{publish}}" wx:key="index">
+  <view class="schoolBody_item" bindtap="jumpClassificationDetail3" data-item="{{item}}">
+  <view class="item_name">{{item.name}}</view>
+  <view class="item_bookCount">{{item.bookCount}}本</view>
+  </view>
+  </van-col>
+</van-row>
+</view>

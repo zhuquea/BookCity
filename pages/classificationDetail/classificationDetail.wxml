@@ -1,0 +1,31 @@
+<view class="classification_detail_first">
+<view wx:for="{{typeList}}" wx:key="index" class="typeList_item {{tabNumObj===index?'typeList_item_hide':''}}" bindtap="tapObj" data-tapid="{{index}}" data-item="{{item}}">
+{{item.name}}
+</view>
+</view>
+<view class="classification_detail_second">
+<view class="detail_second_item {{tabNumObj2==='-1'?'typeList_item_hide':''}}" data-tapid="-1" bindtap="tabObj2" wx:if="{{minsData.length > 0}}">全部</view>
+<view wx:for="{{minsData}}" wx:key="index" class="detail_second_item {{tabNumObj3===index?'typeList_item_hide':''}}" bindtap="tabObj3" data-tapid="{{index}}" data-item="{{item}}">
+{{item}}
+</view>
+</view>
+<view wx:if="{{flagObj===false}}">
+<view wx:for="{{bigData}}" wx:key="index" class="big_Data_item">
+<view class="big_Data_left" bindtap="jump_detail_obj" data-item="{{item}}">
+<image src="https://statics.zhuishushenqi.com{{item.cover}}" class="big_Data_img"></image>
+</view>
+<view class="big_Data_right"> 
+<view class="item_title" bindtap="jump_detail_obj" data-item="{{item}}">{{item.title}}</view>
+<view class="item_author">{{item.author}}</view>
+<view class="item_shortIntro" bindtap="jump_detail_obj" data-item="{{item}}">{{item.shortIntro}}</view>
+<view wx:if="{{item.tags.length > 0}}">
+<van-tag type="danger" class="tag__item">{{item.tags[0]}}</van-tag>
+<van-tag type="primary" class="tag__item">{{item.tags[1]}}</van-tag>
+<van-tag type="success" class="tag__item">{{item.tags[2]}}</van-tag>
+</view>
+</view>
+</view>
+</view>
+<view wx:elif="{{flagObj===true}}" class="classification_detail_Last">
+暂无该类书籍，我们会尽快更新！
+</view>

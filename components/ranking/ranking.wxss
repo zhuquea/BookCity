@@ -1,0 +1,16 @@
+.schoolBodyRank_first{
+  line-height: 100rpx;
+  color: #8a8a8a;
+  margin-left: 20rpx
+}
+.schoolBodyRank_item{
+  line-height: 120rpx;
+  display: flex;
+  align-items: center;
+  border-bottom: 2rpx solid #e6e6e6;
+  margin-left: 20rpx
+}
+.schoolBodyRank_img{
+  width: 80rpx;
+  height: 80rpx
+}

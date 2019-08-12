@@ -1,0 +1,10 @@
+<view wx:for="{{monthBang}}" wx:key="index" class="monthBang">
+<view bindtap="jump_detail" data-item="{{item}}">
+<image src="https://statics.zhuishushenqi.com{{item.cover}}" class="monthBang_img"></image>
+</view>
+<view class="monthBang_rigth">
+<view class="item_title" bindtap="jump_detail" data-item="{{item}}">{{item.title}}</view>
+<view class="item_author">{{item.author}}</view>
+<view class="item_shortIntro" bindtap="jump_detail" data-item="{{item}}">{{item.shortIntro}}</view>
+</view>
+</view>

@@ -1,0 +1,56 @@
+.index_first {
+  display: flex;
+  justify-content: space-between;
+  padding: 40rpx
+}
+.first_img_imging{
+  width: 60rpx;
+  height: 60rpx
+}
+.first_help{
+  display: flex;
+  align-items: center
+}
+.help_helping{
+  width: 100rpx;
+  line-height: 60rpx;
+  text-align: center;
+  border: 2rpx solid black;
+  border-radius: 25rpx
+}
+.help_img_imging{
+  width: 60rpx;
+  height: 60rpx;
+  margin-left: 40rpx
+}
+.index_second_none{
+  line-height: 60rpx;
+  font-size: 40rpx;
+  text-align: center
+}
+.bookShelfData_item{
+  text-align: center;
+  position: relative
+}
+.bookShelfData_img{
+  width: 200rpx;
+  height: 300rpx
+}
+.item_title{
+  font-size: 35rpx
+}
+.item_readed{
+  font-size: 30rpx
+}
+.bookShelfData_item_delete{
+  width: 50rpx;
+  height: 50rpx;
+  background-color: #d81e06;
+  border-radius: 50%;
+  line-height: 45rpx;
+  font-size: 40rpx;
+  position: absolute;
+  top: 10rpx;
+  right: 20rpx;
+  color: white
+}

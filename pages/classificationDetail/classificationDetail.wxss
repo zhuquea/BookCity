@@ -1,0 +1,58 @@
+.classification_detail_first {
+  display: flex
+}
+.typeList_item{
+  width: 200rpx;
+  line-height: 80rpx;
+  font-size: 35rpx;
+  text-align: center
+}
+.typeList_item_hide{
+  color: red
+}
+.classification_detail_second{
+  display: flex
+}
+.detail_second_item{
+  font-size: 35rpx;
+  width: 200rpx;
+  line-height: 40rpx;
+  text-align: center
+}
+.big_Data_item{
+  display: flex
+}
+.big_Data_right{
+  margin-left: 20rpx
+}
+.big_Data_img{
+  width: 250rpx;
+  height: 350rpx
+}
+.item_title {
+  height: 50rpx
+}
+.item_author{
+ height: 50rpx;
+ color: #8a8a8a;
+ font-size: 30rpx;
+ margin-top: 20rpx
+}
+.item_shortIntro{
+  height: 120rpx;
+  color: #8a8a8a;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  font-size: 30rpx
+}
+.tag__item{
+  margin-left: 20rpx
+}
+.classification_detail_Last{
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 80rpx
+}

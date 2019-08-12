@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "navZhouBang": "../../components/zhouBang/zhouBang",
+    "navMonthlyList": "../../components/monthlyList/monthliList",
+    "navGeneralList": "../../components/generalLIst/generalList"
+  },
+  "enablePullDownRefresh": true
+}

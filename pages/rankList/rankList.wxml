@@ -1,0 +1,8 @@
+<view class="rankList_first">
+<view class="first_item {{numObj==='1'?'first_item_hideObj':''}}" data-tapid='1' bindtap="tap">周榜</view>
+<view class="first_item {{numObj==='2'?'first_item_hideObj':''}}" data-tapid='2' bindtap="tap">月榜</view>
+<view class="first_item {{numObj==='3'?'first_item_hideObj':''}}" data-tapid='3' bindtap="tap">总榜</view>
+</view>
+<navZhouBang wx:if="{{numObj==='1'}}" zhouBang="{{zhouBang}}"></navZhouBang>
+<navMonthlyList wx:elif="{{numObj==='2'}}" monthBang="{{monthBang}}"></navMonthlyList>
+<navGeneralList wx:elif="{{numObj==='3'}}" totalBang="{{totalBang}}"></navGeneralList>

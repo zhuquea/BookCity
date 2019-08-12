@@ -1,0 +1,12 @@
+.readingNow_title{
+  font-size: 45rpx;
+  font-weight: bold;
+  line-height: 100rpx;
+  background-color: #e6e6e6
+}
+.readingNow_last{
+  text-align: center;
+  line-height: 80rpx;
+  display: flex;
+  margin-top: 40rpx
+}

@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/search/search",
+    "pages/helping/helping",
+    "pages/rankList/rankList",
+    "pages/details/details",
+    "pages/readingNow/readingNow",
+    "pages/classificationDetail/classificationDetail"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "tabBar": {
+    "selectedColor": "#d81e06",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "书架",
+        "iconPath": "icons/shujia.png",
+        "selectedIconPath": "icons/shujia-red.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "书城",
+        "iconPath": "icons/shucheng.png",
+        "selectedIconPath": "icons/shucheng-red.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "icons/search.png",
+        "selectedIconPath": "icons/search-red.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d81e06",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

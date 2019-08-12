@@ -1,0 +1,133 @@
+.detail_Top{
+  height: 370rpx
+}
+.detail_top{
+  height: 150rpx;
+  background: #d81e06;
+  text-align: center
+}
+.detail_img{
+  width: 250rpx;
+  height: 350rpx;
+  box-shadow: 8rpx 8rpx 10rpx 8rpx rgba(0, 0, 0, 0.2)
+}
+.detail_title{
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 40rpx;
+  font-weight: bold
+}
+.detail_author{
+  line-height: 60rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #bfbfbf
+}
+.detail_rate{
+  height: 200rpx;
+  background-color: #e6e6e6;
+  text-align: center;
+  margin-top: 60rpx
+}
+.rate_top{
+  display: flex;
+  justify-content: space-around;
+  transform: translateY(-40rpx)
+}
+.readingNow{
+  width: 200rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: white;
+  background-color: #d81e06;
+  border: 2rpx solid #bfbfbf;
+  border-radius: 50rpx
+}
+.addBookshelf{
+  width: 200rpx;
+  text-align: center;
+  line-height: 80rpx;
+  background-color: white;
+  border: 2rpx solid #bfbfbf;
+  border-radius: 50rpx
+}
+.latest_Chapter{
+  font-size: 30rpx;
+  color: #2aa515
+}
+.detail_evaluate{
+  width: 90%;
+  margin: 0 auto;
+  background-color: white
+}
+.shortIntro{
+  font-size: 35rpx;
+  color: #8a8a8a
+}
+.generalCatalogue{
+  width: 90%;
+  margin: 10rpx auto;
+  display: flex;
+  align-items: center;
+  background-color: #e6e6e6
+}
+.general_catalogue_img{
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20%
+}
+.detail_recommend{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30rpx
+}
+.detail_recommend_left{
+  font-size: 35rpx
+}
+.detail_recommend_right{
+  font-size: 35rpx;
+  display: flex;
+  align-items: center
+}
+.Refresh_img{
+  width: 40rpx;
+  height: 40rpx
+}
+.recommend_book_Last{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20rpx
+}
+.recommend_book_item{
+  width: 200rpx;
+  text-align: center
+}
+.recommend_book_img{
+  width: 200rpx;
+  height: 300rpx;
+}
+.evaluate_item{
+  display: flex;
+  margin-top: 40rpx
+}
+.evaluate_left{
+  width: 10%
+}
+.evaluate_img{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%
+}
+.evaluate_right{
+  width: 80%;
+  margin-left: 50rpx
+}
+.item_author_nickname {
+  font-size: 35rpx;
+  color: #e98f36
+}
+.item_content{
+ font-size: 30rpx;
+ color: #bfbfbf;
+ line-height: 40rpx
+}

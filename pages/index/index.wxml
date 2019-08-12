@@ -1,0 +1,25 @@
+<view class= "index_first">
+  <view class="first_img">
+    <image src="../../icons/sure.png" class="first_img_imging" wx:if="{{bookShelfData.length===0}}"></image>
+    <image src="../../icons/xiugai.png" class="first_img_imging" wx:elif="{{bookShelfData.length > 0}}" bindtap="modify"></image>
+  </view>
+  <view class="first_help">
+    <view class="help_helping" bindtap="jumpHelping">帮助</view>
+   <image src="../../icons/shuaxin.png" class="help_img_imging"></image>
+  </view>
+</view>
+<view wx:if="{{bookShelfData.length === 0}}" class="index_second_none">
+  主人还没收藏书籍哦，请去书城收藏书籍吧！
+</view>
+<view wx:elif="{{bookShelfData.length > 0}}" class="index_second_yes">
+<van-row>
+  <van-col span="8" wx:for="{{bookShelfData}}" wx:key="index">
+  <view class="bookShelfData_item" bindtap="jump_readingNow_Obj" data-item="{{item}}">
+  <image src="https://statics.zhuishushenqi.com{{item.cover}}" class="bookShelfData_img"></image>
+  <view class="item_title">{{item.title}}</view>
+  <view class="item_readed">读到第{{readedData}}章</view>
+  <view class="bookShelfData_item_delete" wx:if="{{showDelete === true}}" catchtap="deleteObj" data-index="{{index}}">×</view>
+  </view>
+  </van-col>
+</van-row>
+</view>

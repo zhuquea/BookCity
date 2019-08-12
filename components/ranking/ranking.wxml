@@ -1,0 +1,14 @@
+<view class="schoolBodyRank_first">
+男生
+</view>
+<view wx:for="{{schoolBodyRank}}" wx:key="index" wx:if="{{item.collapse === false}}" class="schoolBodyRank_item" bindtap="jump_rankList" data-item="{{item}}">
+<image src="https://statics.zhuishushenqi.com{{item.cover}}" class="schoolBodyRank_img"></image>
+<view>{{item.title}}</view>
+</view>
+<view class="schoolBodyRank_first">
+女生
+</view>
+<view wx:for="{{girlStudentRank}}" wx:key="index" wx:if="{{item.collapse === false}}" class="schoolBodyRank_item" bindtap="jump_rankList" data-item="{{item}}">
+<image src="https://statics.zhuishushenqi.com{{item.cover}}" class="schoolBodyRank_img"></image>
+<view>{{item.title}}</view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "书城",
+  "navigationBarTextStyle": "white",
+  "usingComponents": {
+    "navClassification": "../../components/classification/classification",
+    "navRanking": "../../components/ranking/ranking"
+  },
+  "enablePullDownRefresh": true
+}

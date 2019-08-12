@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-row": "/lib/vant/row/index",
+    "van-col": "/lib/vant/col/index"
+  },
+  "navigationBarTitleText": "小爱小说",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true
+}

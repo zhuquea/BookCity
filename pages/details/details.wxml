@@ -1,0 +1,58 @@
+<view class="detail_Top">
+  <view class="detail_top">
+    <image src="https://statics.zhuishushenqi.com{{detailDATA.cover}}" class="detail_img"></image>
+  </view>
+</view>
+<view class="detail_title">
+  {{detailDATA.title}}
+</view>
+<view class="detail_author">
+  {{detailDATA.author}}
+</view>
+<view class="detail_rate">
+  <view class="rate_top">
+    <view class="readingNow" bindtap="readingNowObj">开始阅读</view>
+    <view class="addBookshelf" bindtap="addBookShelf">加入书架</view>
+  </view>
+  <view class="rate_bottom">
+    <van-rate value="{{ value }}"></van-rate>
+    <view>更新至
+      <text class="latest_Chapter">{{latestChapter}}</text>
+    </view>
+  </view>
+</view>
+<view class="detail_evaluate">
+  <van-tabs active="{{ active }}">
+    <van-tab title="详情" class="shortIntro">
+      <scroll-view scroll-y style="height: 200rpx;"> {{shortIntro}}</scroll-view>
+      <view class="generalCatalogue">
+        <image src="../../icons/mulu.png" class="general_catalogue_img"></image>
+        总目录（{{generalCatalogue}}章）
+      </view>
+      <view class="detail_recommend">
+        <view class="detail_recommend_left">看过这本书的人还在看</view>
+        <view class="detail_recommend_right" bindtap="changeObj">
+          <image src="../../icons/shuaxin(red).png" class="Refresh_img"></image>
+          换一换
+        </view>
+      </view>
+      <view class="recommend_book_Last">
+        <view wx:for="{{arr}}" wx:key="index" class="recommend_book_item">
+          <image src="https://statics.zhuishushenqi.com{{item.cover}}" class="recommend_book_img"></image>
+          <view>{{item.title}}</view>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="评价({{shortReviewsNum}})">
+      <view wx:for="{{shortReviews}}" wx:key="index" class="evaluate_item">
+        <view class="evaluate_left">
+          <image src="https://statics.zhuishushenqi.com{{item.author.avatar}}" class="evaluate_img"></image>
+        </view>
+        <view class="evaluate_right">
+          <view class="item_author_nickname">{{item.author.nickname}}</view>
+          <view class="item_content">{{item.content}}</view>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+</view>

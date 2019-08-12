@@ -1,0 +1,17 @@
+.schoolBody_first {
+  line-height: 100rpx;
+  color: #8a8a8a
+}
+.schoolBody_item{
+  width: 252rpx;
+  line-height: 70rpx;
+  text-align: center;
+  border: 1rpx solid #e6e6e6;
+  margin: 0 0 -1px -1px
+}
+.item_name{
+  font-weight: bold
+}
+.item_bookCount{
+  color: #bfbfbf
+}

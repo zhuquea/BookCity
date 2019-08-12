@@ -1,0 +1,18 @@
+.Help_body{
+  padding: 10rpx
+}
+.Help_first {
+  font-size: 50rpx;
+  font-weight: bold
+}
+.Help_top1 {
+  font-size: 40rpx;
+  margin-top: 10rpx
+}
+.top1_box {
+  font-size: 35rpx;
+  text-indent: 2em;
+  line-height: 50rpx;
+  margin-top: 10rpx;
+  color: #8a8a8a
+}

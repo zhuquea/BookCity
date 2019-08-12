@@ -1,0 +1,60 @@
+.search_first{
+  text-align: center
+}
+.search_second{
+  display: flex;
+  justify-content: space-around
+}
+.second_left{
+  font-size: 30rpx
+}
+.second_right{
+  display: flex;
+  align-items: center
+}
+.second_right_img{
+  width: 40rpx;
+  height: 40rpx
+}
+.second_right_change{
+  font-size: 30rpx;
+  color: #e03b06
+}
+.search_third{
+  display: flex;
+  flex-wrap: wrap
+}
+.hot_search_item{
+  padding: 10rpx;
+  line-height: 60rpx;
+  text-align: center;
+  margin-left: 35rpx;
+  margin-top: 20rpx;
+  color: white
+}
+.search_fourth{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20rpx
+}
+.fourth_left{
+  font-size: 35rpx
+}
+.fourth_right{
+  display: flex;
+  align-items: center;
+  font-size: 35rpx
+}
+.fourth_delete_img{
+  width: 50rpx;
+  height: 50rpx
+}
+.search_History_Obj_all{
+  display: flex;
+  flex-wrap: wrap
+}
+.search_History_Obj_item{
+  font-size: 35rpx;
+  margin-left: 20rpx;
+  text-align: center
+}

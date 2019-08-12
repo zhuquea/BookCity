@@ -1,0 +1,15 @@
+<html-view id="htmlView" wxParseData="{{nodes}}"
+          notes="{{notes}}"
+          bind:onMark="onMark" 
+          bind:unMark="unMark"
+          bind:wxParseImgTap="wxParseImgTap" bind:wxParseImgLoad="wxParseImgLoad" ></html-view>
+<view class="readingNow_title">
+  {{specificData}}
+</view>
+<view class="readingNow_body">
+  {{chapterContent.body}}
+</view>
+<view class="readingNow_last">
+  <button type="warn" size="mini" bindtap="thePreviousChapter">上一章</button>
+  <button type="warn" size="mini" bindtap="nextChapter">下一章</button>
+</view>
